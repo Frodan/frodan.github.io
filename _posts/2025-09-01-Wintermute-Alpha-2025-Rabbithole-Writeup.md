@@ -1,6 +1,6 @@
 ---
-title: Writeup for Rabbithole Wintermute Alpha 2025 
-tags: Wintermute, Alpha, Writeup, Rabbithole
+title: Writeup for "Rabbithole" Wintermute Alpha 2025 
+tags: Wintermute Alpha Writeup Rabbithole
 ---
 # Rabbithole
 ## Task
