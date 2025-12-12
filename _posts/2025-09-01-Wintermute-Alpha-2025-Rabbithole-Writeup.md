@@ -24,12 +24,12 @@ To find other attacker wallets, I researched behavior patterns and unique marker
 #### Deposit
 
 The initial deposit came from Binance, likely to bypass security monitoring since Binance deposits are typically considered safe. While monitoring systems focus on Tornado Cash, Railgun, FixedFloat, and other mixers, the attacker probably used fake KYC documents to fund through Binance.
-![Deposit](./pics/rabbithole/Deposit.png)
+![Deposit](/assets/images/2025/wintermute-alpha/rabbithole/Deposit.png)
 
 #### Withdrawal
 
 Stolen funds moved to ["CRV/ETH Exploiter 2"](https://etherscan.io/address/0xc772bdb4588414d8401ab90aa9da084eb52e7475), but only 1,500 ETH went through Tornado Cash. The remaining stolen funds still sit in the wallet for unknown reasons.
-![CRV/ETH Exploiter 2](./pics/rabbithole/CRV-ETH-Exploiter-2.png)
+![CRV/ETH Exploiter 2](/assets/images/2025/wintermute-alpha/rabbithole/CRV-ETH-Exploiter-2.png)
 
 #### Activity Before the Hack
 
@@ -43,14 +43,14 @@ The CRV/ETH Exploiter drained what remained, obtaining 32.291419732496523585 ETH
 The attacker didn't discover the Vyper vulnerability independently. At least 5 different actors had already exploited it, with Twitter buzzing about the bug. The CRV/ETH Exploiter simply wrote his own exploit for this known vulnerability.
 
 [Timeline spreadsheet](https://docs.google.com/spreadsheets/d/1gUi7Nxs6V4wHKUMfSq85d2ShFW3fsMfggKIEV846ROQ/edit?gid=0#gid=0)
-![Timeline](./pics/rabbithole/Timeline.png)
+![Timeline](/assets/images/2025/wintermute-alpha/rabbithole/Timeline.png)
 
 Once the Vyper reentrancy vulnerability went public, every second counted. The attacker likely reused this wallet for the CRV/ETH attack to save time on anonymous deposits.
 
 #### Exploit Techniques
 
 Each exploit contract used the same unique obfuscation: double keccak256 hashing with bytes manipulation for owner checks, preventing MEV bots from frontrunning the exploit. 
-![Keccak](./pics/rabbithole/Keccak.png)
+![Keccak](/assets/images/2025/wintermute-alpha/rabbithole/Keccak.png)
 
 ### Attacker Markers
 
